@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+  background: rgb(66, 66, 66);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
