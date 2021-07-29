@@ -6,6 +6,7 @@ import {
   TextField
 } from "@material-ui/core";
 import { Form, Formik } from "formik";
+import * as Yup from "yup";
 
 import UniversalInput from "../components/Fields/UniversalInput";
 
@@ -22,7 +23,10 @@ const initialValues = {
   note: "",
 };
 
-// const validationSchema = 
+const validationSchema = Yup.object({
+  title: Yup.string(),
+  note: Yup.string(),
+});
 
 const onSubmit = values => {
   console.log("Form values:", values);
@@ -35,6 +39,7 @@ function Create() {
     <Container>
       <Formik
         initialValues={initialValues}
+        validationSchema={validationSchema}
         onSubmit={onSubmit}
       >
         <Form>
