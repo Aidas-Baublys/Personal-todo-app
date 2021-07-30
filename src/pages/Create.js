@@ -5,6 +5,7 @@ import {
   Button
 } from "@material-ui/core";
 import { Form, Formik } from "formik";
+import { useHistory } from "react-router-dom";
 import * as Yup from "yup";
 
 import UniversalInput from "../components/Fields/UniversalInput";
@@ -27,12 +28,22 @@ const validationSchema = Yup.object({
   note: Yup.string(),
 });
 
-const onSubmit = values => {
-  console.log("Form values:", values);
-};
-
 function Create() {
+  const history = useHistory();
   const classes = useStyles();
+
+  const onSubmit = values => {
+    fetch("http://localhost:8000/notes", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        title: values.title,
+        details: values.note
+      })
+    }).then(() => history.replace("/"));
+  };
 
   return (
     <Container>
