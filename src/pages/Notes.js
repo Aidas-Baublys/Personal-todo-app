@@ -1,6 +1,7 @@
 import { Container, Grid, Button } from "@material-ui/core";
 import { useState, useEffect } from "react";
 import { useHistory } from 'react-router-dom';
+import Masonry from "react-masonry-css";
 
 import NoteCard from './../components/NoteCard/index';
 
@@ -26,23 +27,17 @@ function Notes() {
 
   return (
     <Container>
-      <Grid container spacing={3}>
+      <Masonry
+        breakpointCols={3}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
         {notes.map(note => (
-          <Grid key={note.id} item xs={12} sm={6} md={3}>
+          <article key={note.id}>
             <NoteCard note={note} deleteNote={deleteNote} />
-          </Grid>
+          </article>
         ))}
-        <Grid item xs={12} sm={12} md={12}>
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            onClick={() => history.push("/create")}
-          >
-            New note
-          </Button>
-        </Grid>
-      </Grid>
+      </Masonry>
     </Container>
   );
 }

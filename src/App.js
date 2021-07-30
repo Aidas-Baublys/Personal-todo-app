@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@material-ui/core';
-import { red } from '@material-ui/core/colors';
 
 import Notes from './pages/Notes';
 import Create from './pages/Create';
@@ -11,7 +10,9 @@ const theme = createTheme({
     primary: {
       main: "rgb(170, 100, 100)",
     },
-    secondary: red,
+    secondary: {
+      main: "rgb(204, 150, 0)",
+    },
   },
   typography: {
     fontFamily: "Courier+Prime",
