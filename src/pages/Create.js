@@ -2,8 +2,7 @@ import {
   makeStyles,
   Container,
   Typography,
-  Button,
-  TextField
+  Button
 } from "@material-ui/core";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
@@ -12,7 +11,7 @@ import UniversalInput from "../components/Fields/UniversalInput";
 
 const useStyles = makeStyles({
   btn: {
-    marginTop: "12px",
+    marginTop: "14px",
     fontFamily: "",
     fontSize: "18px",
   }
@@ -53,7 +52,7 @@ function Create() {
             margin="normal"
             required
           />
-          <TextField
+          <UniversalInput
             name="note"
             label="Note"
             required
