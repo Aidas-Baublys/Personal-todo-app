@@ -32,8 +32,8 @@ function Create() {
   const history = useHistory();
   const classes = useStyles();
 
-  const onSubmit = values => {
-    fetch("http://localhost:8000/notes", {
+  const onSubmit = async values => {
+    await fetch("http://localhost:8000/notes", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

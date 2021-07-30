@@ -1,37 +1,9 @@
 {
   "notes": [
     {
-      "title": "Yoshi's birthday bash",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "category": "reminders",
-      "id": 1
-    },
-    {
-      "title": "Complete my ninja training",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-      "category": "work",
-      "id": 2
-    },
-    {
-      "title": "Order a pizza!",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "category": "todos",
-      "id": 3
-    },
-    {
-      "title": "New note",
-      "details": "Very important note.",
-      "id": 4
-    },
-    {
       "title": "Yet another note",
       "details": "LoremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.\",",
       "id": 5
-    },
-    {
-      "title": "O tu su...",
-      "details": "... ka paskutinė krw nx blt px.",
-      "id": 6
     },
     {
       "title": "Man patinka pica",
@@ -39,14 +11,19 @@
       "id": 7
     },
     {
-      "title": "Super mega note",
-      "details": "Awwwwwwwwwwwwwwwwwwww shit.",
-      "id": 8
-    },
-    {
       "title": "dfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfs",
       "details": "sdffgsdssssss186gw186rg816wrg",
       "id": 9
+    },
+    {
+      "title": "BUY FOOD",
+      "details": "FOO BAR",
+      "id": 12
+    },
+    {
+      "title": "FOOOOOOOOO",
+      "details": "BAAAAARRRR",
+      "id": 13
     }
   ]
 }
